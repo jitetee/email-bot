@@ -58,7 +58,7 @@ print_main_menu() {
     echo -e "  ${GREEN}[3]${NC} 📊 Analytics & Reports"
     echo -e "  ${GREEN}[4]${NC} ⚙️  Settings & Configuration"
     echo -e "  ${GREEN}[5]${NC} 🛠️  Tools & Utilities"
-    echo -e "  ${GREEN}[6]${NC} 🌐 Web GUI (Full Interface)"
+    echo -e "  ${GREEN}[6]${NC} 🌐 Open Web GUI (http://localhost:8080)"
     echo -e "  ${GREEN}[7]${NC} 📖 Help & Documentation"
     echo -e "  ${GREEN}[0]${NC} Exit"
     echo -e "${WHITE}═══════════════════════════════════════════════════════════${NC}"
@@ -746,9 +746,22 @@ main() {
             4) settings_menu_handler ;;
             5) tools_menu ;;
             6)
-                echo -e "${BLUE}=== Starting Web GUI ===${NC}"
-                echo -e "${GREEN}Opening http://localhost:8080${NC}"
-                echo -e "${YELLOW}Press Ctrl+C to stop${NC}"
+                echo -e "${BLUE}╔═══════════════════════════════════════════════════════════╗${NC}"
+                echo -e "${BLUE}║          🌐 Starting Web GUI Server                        ║${NC}"
+                echo -e "${BLUE}╚═══════════════════════════════════════════════════════════╝${NC}"
+                echo ""
+                echo -e "${GREEN}✓ Web GUI starting at: http://localhost:8080${NC}"
+                echo -e "${GREEN}✓ Also available at: http://127.0.0.1:8080${NC}"
+                echo ""
+                echo -e "${WHITE}Features:${NC}"
+                echo -e "  📝 Visual email composer"
+                echo -e "  🎨 Template browser"
+                echo -e "  📋 Email list manager"
+                echo -e "  📊 Analytics dashboard"
+                echo -e "  ⚙️  Settings panel"
+                echo ""
+                echo -e "${YELLOW}Press Ctrl+C to stop the server${NC}"
+                echo ""
                 cd "$SCRIPT_DIR"
                 python3 web_gui.py 8080
                 ;;

@@ -1,5 +1,4 @@
 # Core Dependencies
-python-telegram-bot==20.7
 aiohttp>=3.8.0
 
 # Email Validation
@@ -8,8 +7,8 @@ dnspython>=2.3.0
 # Environment Variables
 python-dotenv>=1.0.0
 
-# Optional: Web Framework (for advanced API deployments)
-# flask>=2.0.0
+# Web Framework (for web GUI)
+flask>=2.0.0
 
 # Optional: Database (for advanced tracking)
 # sqlalchemy>=2.0.0

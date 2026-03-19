@@ -58,7 +58,7 @@ print_main_menu() {
     echo -e "  ${GREEN}[3]${NC} 📊 Analytics & Reports"
     echo -e "  ${GREEN}[4]${NC} ⚙️  Settings & Configuration"
     echo -e "  ${GREEN}[5]${NC} 🛠️  Tools & Utilities"
-    echo -e "  ${GREEN}[6]${NC} 🚀 Quick Start Server"
+    echo -e "  ${GREEN}[6]${NC} 🌐 Web GUI (Full Interface)"
     echo -e "  ${GREEN}[7]${NC} 📖 Help & Documentation"
     echo -e "  ${GREEN}[0]${NC} Exit"
     echo -e "${WHITE}═══════════════════════════════════════════════════════════${NC}"
@@ -725,40 +725,32 @@ auto_start_menu() {
 
 main() {
     load_env
-    
-    # Check for auto-start flag
-    if [[ "$1" == "--auto" || "$1" == "-a" ]]; then
-        auto_start_menu
-    fi
-    
-    # Check for direct server start
-    if [[ "$1" == "--server" || "$1" == "-s" ]]; then
-        start_api_server
+
+    # Check for web GUI start
+    if [[ "$1" == "--web" || "$1" == "-w" ]]; then
+        python3 "$SCRIPT_DIR/web_gui.py" 8080
         exit 0
     fi
-    
-    # Check for direct bot start
-    if [[ "$1" == "--bot" || "$1" == "-b" ]]; then
-        start_telegram_bot
-        exit 0
-    fi
-    
+
     print_banner
-    
+
     # Main loop
     while true; do
         print_main_menu
         read -p "Choose option (0-7): " choice
-        
+
         case $choice in
             1) send_menu ;;
             2) template_menu ;;
             3) analytics_menu ;;
             4) settings_menu_handler ;;
             5) tools_menu ;;
-            6) 
-                echo -e "${BLUE}=== Quick Start Server ===${NC}"
-                start_api_server
+            6)
+                echo -e "${BLUE}=== Starting Web GUI ===${NC}"
+                echo -e "${GREEN}Opening http://localhost:8080${NC}"
+                echo -e "${YELLOW}Press Ctrl+C to stop${NC}"
+                cd "$SCRIPT_DIR"
+                python3 web_gui.py 8080
                 ;;
             7) help_menu ;;
             0)

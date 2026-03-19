@@ -130,6 +130,7 @@ print_tools_menu() {
     echo -e "  ${GREEN}[6]${NC} Compliance Footer Generator"
     echo -e "  ${GREEN}[7]${NC} CSS Injector"
     echo -e "  ${GREEN}[8]${NC} Template Manager"
+    echo -e "  ${GREEN}[9]${NC} 🌐 Web Dashboard"
     echo -e "  ${GREEN}[0]${NC} Back"
     echo -e "${WHITE}═══════════════════════════════════════════════════════════${NC}"
 }
@@ -597,7 +598,7 @@ EOF
 tools_menu() {
     while true; do
         print_tools_menu
-        read -p "Choose option (0-8): " choice
+        read -p "Choose option (0-9): " choice
 
         case $choice in
             1) run_email_list_manager ;;
@@ -627,6 +628,13 @@ tools_menu() {
             6) python3 "$SCRIPT_DIR/compliance_footer.py"; read -p "Press Enter..." ;;
             7) python3 "$SCRIPT_DIR/css_injector.py" presets; read -p "Press Enter..." ;;
             8) python3 "$SCRIPT_DIR/template_manager.py" list; read -p "Press Enter..." ;;
+            9)
+                echo -e "${BLUE}=== Starting Web Dashboard ===${NC}"
+                echo -e "${GREEN}Opening http://localhost:8000${NC}"
+                echo -e "${YELLOW}Press Ctrl+C to stop${NC}"
+                cd "$SCRIPT_DIR"
+                python3 web_dashboard.py 8000
+                ;;
             0) return ;;
             *) echo -e "${RED}Invalid option${NC}"; read -p "Press Enter..." ;;
         esac

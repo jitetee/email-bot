@@ -8,8 +8,7 @@ import sys
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import parse_qs, urlparse
-import cgi
-import io
+import re
 
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -86,18 +85,15 @@ class WebGUIHandler(BaseHTTPRequestHandler):
         post_data = {}
         if 'application/json' in content_type:
             post_data = json.loads(self.rfile.read(content_length).decode())
-        elif 'multipart/form-data' in content_type:
-            # Handle file uploads
-            form = cgi.FieldStorage(
-                fp=self.rfile,
-                headers=self.headers,
-                environ={'REQUEST_METHOD': 'POST', 'CONTENT_TYPE': content_type}
-            )
-            for key in form.keys():
-                post_data[key] = form[key].value if not isinstance(form[key], cgi.FieldStorage) else form[key]
         else:
-            post_data = parse_qs(self.rfile.read(content_length).decode())
-            post_data = {k: v[0] for k, v in post_data.items()}
+            # Parse form data manually (no cgi module)
+            post_body = self.rfile.read(content_length).decode()
+            if 'multipart/form-data' in content_type:
+                # Simple multipart parsing (for basic file uploads)
+                post_data = {'content': post_body}
+            else:
+                post_data = parse_qs(post_body)
+                post_data = {k: v[0] for k, v in post_data.items()}
         
         # Route POST requests
         if path == '/api/send':

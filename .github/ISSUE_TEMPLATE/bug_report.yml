@@ -1,0 +1,78 @@
+name: Issue Report
+
+description: Report a bug or issue
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        
+  - type: input
+    id: description
+    attributes:
+      label: Describe the issue
+      description: Briefly describe the issue
+      placeholder: "Example: Campaign fails with large email lists"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Step 1
+        2. Step 2
+        3. Step 3
+    validations:
+      required: true
+      
+  - type: input
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen?
+      placeholder: "Example: Campaign should complete successfully"
+    validations:
+      required: true
+      
+  - type: input
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: "Example: Error after 100 emails"
+    validations:
+      required: true
+      
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        examples:
+          - **OS**: Ubuntu 20.04
+          - **Python**: 3.9.7
+          - **Version**: v3.0
+      value: |
+        - OS: 
+        - Python: 
+        - Version: 
+    validations:
+      required: true
+      
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & Screenshots
+      description: Include error messages or screenshots
+      render: shell
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other information that might help

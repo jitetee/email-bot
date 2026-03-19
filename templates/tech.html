@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Courier New', monospace; background: #0d1117; max-width: 650px; margin: 0 auto; }
+        .container { background: #161b22; border: 1px solid #30363d; padding: 30px; }
+        .header { border-bottom: 1px solid #30363d; padding-bottom: 15px; margin-bottom: 20px; }
+        .header span { color: #58a6ff; font-size: 12px; }
+        h1 { font-size: 20px; color: #f0f6fc; margin: 10px 0; }
+        .code { background: #0d1117; padding: 15px; border-radius: 6px; border: 1px solid #30363d; font-size: 13px; color: #7ee787; margin: 20px 0; }
+        p { color: #8b949e; font-size: 14px; line-height: 1.6; }
+        .button { display: inline-block; padding: 12px 24px; background: #238636; color: #fff; text-decoration: none; border-radius: 6px; font-size: 13px; margin: 20px 0; }
+        .button:hover { background: #2ea043; }
+        .footer { border-top: 1px solid #30363d; padding-top: 15px; margin-top: 25px; font-size: 11px; color: #484f58; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>// $company</span>
+            <h1>Hello, $name</h1>
+        </div>
+        <p>We've deployed something new and you're invited to check it out.</p>
+        <div class="code">
+            > status: available<br>
+            > offer: 50% OFF<br>
+            > expires: 48h<br>
+            > code: LAUNCH50
+        </div>
+        <p>Ready to level up? Click below to access your exclusive deal.</p>
+        <a href="$link" class="button">▶ Execute</a>
+        <div class="footer">
+            <p>© $company | <a href="$unsubscribe_link" style="color:#484f58;">opt_out()</a></p>
+        </div>
+    </div>
+</body>
+</html>

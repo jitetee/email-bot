@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv
+
+# Environment variables & Secrets (CRITICAL - Never commit!)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+*.env
+
+# API Keys & Secrets
+*.key
+*.secret
+*.token
+*.apikey
+*api_key*
+*secret_key*
+*password*
+*credentials*
+
+# Google / Firebase
+serviceAccountKey.json
+firebase-config.json
+google-services.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Email data (keep structure, ignore actual data)
+data/email_list.txt
+data/*.json
+!data/.gitkeep
+
+# Generated content
+templates/ai_*.html
+templates/ai_*_subject.txt
+data/ai_generated_templates.json
+
+# Certificates & Keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json

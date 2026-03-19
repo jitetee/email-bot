@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Courier New', monospace; background: #0d1117; max-width: 650px; margin: 0 auto; padding: 20px; }
+        .container { background: #161b22; border: 1px solid #30363d; padding: 30px; border-radius: 6px; }
+        .header { border-bottom: 1px solid #30363d; padding-bottom: 15px; margin-bottom: 20px; }
+        .header .tag { color: #58a6ff; font-size: 11px; }
+        .header h1 { color: #f0f6fc; font-size: 18px; margin: 8px 0; }
+        p { color: #8b949e; font-size: 14px; line-height: 1.6; }
+        .newsletter-content { background: #0d1117; padding: 20px; border-radius: 6px; border: 1px solid #30363d; margin: 20px 0; }
+        .article { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #21262d; }
+        .article:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .article h3 { color: #58a6ff; font-size: 15px; margin: 0 0 8px 0; }
+        .article p { color: #6e7681; font-size: 13px; margin: 0; }
+        .article a { color: #7ee787; text-decoration: none; font-size: 12px; }
+        .stats { display: table; width: 100%; margin: 20px 0; }
+        .stat { display: table-cell; width: 33%; text-align: center; padding: 15px; background: #21262d; border-radius: 6px; }
+        .stat-num { color: #7ee787; font-size: 20px; font-weight: bold; }
+        .stat-label { color: #484f58; font-size: 11px; margin-top: 5px; }
+        .button { display: inline-block; padding: 10px 25px; background: #238636; color: #fff; text-decoration: none; border-radius: 6px; font-size: 13px; margin: 15px 0; }
+        .footer { border-top: 1px solid #30363d; padding-top: 15px; margin-top: 25px; font-size: 11px; color: #484f58; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="tag">// $company Newsletter</span>
+            <h1>📰 Weekly Digest - $week</h1>
+        </div>
+        
+        <p>Hi $name,</p>
+        <p>Here's your weekly roundup of the latest updates, articles, and insights.</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">$stat1_num</div>
+                <div class="stat-label">$stat1_label</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">$stat2_num</div>
+                <div class="stat-label">$stat2_label</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">$stat3_num</div>
+                <div class="stat-label">$stat3_label</div>
+            </div>
+        </div>
+        
+        <div class="newsletter-content">
+            <div class="article">
+                <h3>📌 $article1_title</h3>
+                <p>$article1_desc</p>
+                <a href="$article1_link">Read more →</a>
+            </div>
+            <div class="article">
+                <h3>📌 $article2_title</h3>
+                <p>$article2_desc</p>
+                <a href="$article2_link">Read more →</a>
+            </div>
+            <div class="article">
+                <h3>📌 $article3_title</h3>
+                <p>$article3_desc</p>
+                <a href="$article3_link">Read more →</a>
+            </div>
+        </div>
+        
+        <a href="$link" class="button">View Full Archive</a>
+        
+        <div class="footer">
+            <p>© $company | <a href="$unsubscribe_link" style="color:#484f58;">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+</html>

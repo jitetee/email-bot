@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, 'Times New Roman', serif; background: #f9f6f3; max-width: 600px; margin: 0 auto; padding: 30px; }
+        .container { background: #fff; border: 2px solid #c9a959; padding: 45px 40px; }
+        .logo { text-align: center; font-size: 28px; color: #c9a959; margin-bottom: 30px; letter-spacing: 5px; font-weight: bold; }
+        .header { text-align: center; border-bottom: 2px solid #c9a959; padding-bottom: 25px; margin-bottom: 30px; }
+        .header h1 { color: #333; font-size: 24px; margin: 0; font-style: italic; }
+        .header p { color: #888; font-size: 14px; margin: 10px 0 0 0; }
+        p { color: #555; line-height: 1.8; font-size: 15px; margin-bottom: 15px; }
+        .event-box { background: linear-gradient(135deg, #f5f7fa 0%, #e8e4e1 100%); border: 1px solid #c9a959; padding: 25px; margin: 25px 0; border-radius: 8px; }
+        .event-box h2 { color: #c9a959; margin: 0 0 15px 0; font-size: 20px; text-align: center; }
+        .event-detail { display: table; width: 100%; margin: 10px 0; }
+        .event-label { display: table-cell; width: 30%; font-weight: bold; color: #666; }
+        .event-value { display: table-cell; color: #333; }
+        .rsvp-button { display: inline-block; padding: 14px 40px; background: #c9a959; color: #fff; text-decoration: none; font-size: 14px; letter-spacing: 1px; margin: 20px 0; }
+        .footer { text-align: center; font-size: 11px; color: #999; margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">$company</div>
+        <div class="header">
+            <h1>You're Invited!</h1>
+            <p>An Exclusive Event</p>
+        </div>
+        
+        <p>Dear <strong>$name</strong>,</p>
+        
+        <p>We cordially invite you to join us for a special occasion. Your presence would be an honor.</p>
+        
+        <div class="event-box">
+            <h2>📅 Event Details</h2>
+            <div class="event-detail">
+                <span class="event-label">Event:</span>
+                <span class="event-value">$event_name</span>
+            </div>
+            <div class="event-detail">
+                <span class="event-label">Date:</span>
+                <span class="event-value">$event_date</span>
+            </div>
+            <div class="event-detail">
+                <span class="event-label">Time:</span>
+                <span class="event-value">$event_time</span>
+            </div>
+            <div class="event-detail">
+                <span class="event-label">Venue:</span>
+                <span class="event-value">$event_venue</span>
+            </div>
+            <div class="event-detail">
+                <span class="event-label">Dress:</span>
+                <span class="event-value">$event_dress</span>
+            </div>
+        </div>
+        
+        <p style="text-align:center;">We look forward to celebrating with you!</p>
+        
+        <center><a href="$link" class="rsvp-button">RSVP NOW</a></center>
+        
+        <p style="margin-top:25px;font-style:italic;">Warm regards,<br>The $company Team</p>
+        
+        <div class="footer">
+            <p>© $company | <a href="$unsubscribe_link" style="color:#999;">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+</html>

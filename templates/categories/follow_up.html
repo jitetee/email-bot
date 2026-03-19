@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff8e1; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .container { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #f5af19 0%, #f12711 100%); padding: 35px; text-align: center; }
+        .header h1 { color: #fff; font-size: 26px; margin: 0; }
+        .content { padding: 35px; }
+        p { color: #555; line-height: 1.7; font-size: 15px; margin-bottom: 15px; }
+        .followup-box { background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%); border-left: 4px solid #f5af19; padding: 25px; margin: 25px 0; border-radius: 0 8px 8px 0; }
+        .followup-box h3 { color: #f12711; margin: 0 0 10px 0; font-size: 18px; }
+        .timeline { margin: 25px 0; }
+        .timeline-item { display: table; width: 100%; margin: 15px 0; }
+        .timeline-date { display: table-cell; width: 30%; font-weight: bold; color: #f5af19; }
+        .timeline-event { display: table-cell; color: #555; }
+        .button { display: inline-block; padding: 14px 35px; background: linear-gradient(135deg, #f5af19, #f12711); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 20px 0; }
+        .footer { background: #f8f9fa; padding: 20px; text-align: center; font-size: 12px; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📞 Following Up</h1>
+        </div>
+        <div class="content">
+            <p>Hi <strong>$name</strong>,</p>
+            
+            <p>I hope this message finds you well. I wanted to follow up on our previous conversation regarding $subject.</p>
+            
+            <div class="followup-box">
+                <h3>📋 Quick Recap</h3>
+                <p>We discussed $topic and I wanted to check if you had any questions or if there's anything else I can help with.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">📅 Last Contact</span>
+                    <span class="timeline-event">$last_contact</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">💬 Topic</span>
+                    <span class="timeline-event">$topic</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">📝 Status</span>
+                    <span class="timeline-event">$status</span>
+                </div>
+            </div>
+            
+            <p>I'm here to help and would love to move forward whenever you're ready. Please let me know if you need any additional information.</p>
+            
+            <center><a href="$link" class="button">Schedule a Call</a></center>
+            
+            <p style="margin-top:25px;">Best regards,<br>$sender_name<br>$company</p>
+        </div>
+        <div class="footer">
+            <p>© $company | <a href="$unsubscribe_link" style="color:#888;">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+</html>

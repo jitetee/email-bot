@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Comic Sans MS', 'Segoe UI', sans-serif; background: linear-gradient(180deg, #a8edea 0%, #fed6e3 100%); max-width: 600px; margin: 0 auto; padding: 20px; }
+        .container { background: #fff; border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .emoji-header { font-size: 60px; text-align: center; display: block; margin-bottom: 15px; }
+        h1 { color: #ff6b9d; font-size: 28px; text-align: center; margin: 0 0 25px 0; }
+        p { color: #555; line-height: 1.6; font-size: 15px; margin-bottom: 15px; }
+        .friend-note { background: linear-gradient(135deg, #fff9f5 0%, #fff0f0 100%); border: 2px dashed #ff6b9d; padding: 25px; border-radius: 15px; margin: 25px 0; }
+        .friend-note p { margin: 5px 0; color: #666; }
+        .photo-frame { text-align: center; margin: 25px 0; }
+        .photo-frame span { font-size: 80px; }
+        .button { display: inline-block; padding: 14px 35px; background: linear-gradient(45deg, #ff6b9d, #ff9a9e); color: #fff; text-decoration: none; border-radius: 25px; font-weight: bold; margin: 20px 0; }
+        .footer { text-align: center; font-size: 12px; color: #aaa; margin-top: 25px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji-header">👋💌</span>
+        <h1>Hey $name!</h1>
+        
+        <p>Hope you're doing awesome! Just wanted to reach out and share some exciting news with you.</p>
+        
+        <div class="friend-note">
+            <p><strong>💭 Thinking of you!</strong></p>
+            <p>It's been a while since we caught up.</p>
+            <p>Would love to hear how you're doing!</p>
+        </div>
+        
+        <div class="photo-frame">
+            <span>📸</span>
+        </div>
+        
+        <p>$message</p>
+        
+        <p style="text-align:center;">Let's catch up soon! ☕</p>
+        
+        <center><a href="$link" class="button">Reply Back!</a></center>
+        
+        <p style="margin-top:30px;">
+            Your friend,<br>
+            <strong style="color:#ff6b9d;">$sender_name</strong>
+        </p>
+        
+        <div class="footer">
+            <p>Sent with 💕 from $company</p>
+        </div>
+    </div>
+</body>
+</html>

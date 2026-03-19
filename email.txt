@@ -1,0 +1,2 @@
+email,valid,risk_score,is_disposable,is_role_based
+ezraogombo@gmail.com,True,0,False,False

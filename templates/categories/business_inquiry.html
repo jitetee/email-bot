@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .container { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .header { background: #2c3e50; padding: 40px; text-align: center; }
+        .header h1 { color: #fff; font-size: 24px; margin: 0; font-weight: 500; letter-spacing: 2px; }
+        .content { padding: 40px; }
+        .logo-section { text-align: center; margin-bottom: 30px; }
+        .logo-section span { font-size: 50px; }
+        p { color: #555; line-height: 1.7; font-size: 15px; margin-bottom: 15px; }
+        .intro-box { background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 25px 0; }
+        .intro-box h2 { color: #2c3e50; margin: 0 0 15px 0; font-size: 18px; }
+        .intro-box p { margin: 8px 0; color: #666; font-size: 14px; }
+        .social-links { text-align: center; margin: 25px 0; }
+        .social-links a { display: inline-block; width: 45px; height: 45px; background: #3498db; color: #fff; text-decoration: none; border-radius: 50%; margin: 0 8px; line-height: 45px; font-size: 20px; }
+        .button { display: inline-block; padding: 14px 35px; background: #3498db; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 500; margin: 20px 0; }
+        .footer { background: #ecf0f1; padding: 25px; text-align: center; font-size: 12px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Business Inquiry</h1>
+        </div>
+        <div class="content">
+            <div class="logo-section">
+                <span>🏢</span>
+            </div>
+            
+            <p>Dear <strong>$name</strong>,</p>
+            
+            <p>I hope this email finds you well. I am reaching out to explore potential business opportunities between our organizations.</p>
+            
+            <div class="intro-box">
+                <h2>📌 About This Inquiry</h2>
+                <p><strong>Company:</strong> $company</p>
+                <p><strong>Industry:</strong> $industry</p>
+                <p><strong>Purpose:</strong> $purpose</p>
+                <p><strong>Expected Outcome:</strong> $outcome</p>
+            </div>
+            
+            <p>I believe there could be valuable synergies between our companies and would appreciate the opportunity to discuss this further.</p>
+            
+            <p>Would you be available for a brief call next week to explore this potential partnership?</p>
+            
+            <center><a href="$link" class="button">Schedule Meeting</a></center>
+            
+            <p style="margin-top:25px;">Looking forward to your response.</p>
+            
+            <p style="margin-top:20px;">Best regards,<br><strong>$sender_name</strong><br>$position<br>$company</p>
+            
+            <div class="social-links">
+                <a href="#">in</a>
+                <a href="#">🐦</a>
+                <a href="#">📧</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© $company. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

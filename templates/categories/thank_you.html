@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .container { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 35px; text-align: center; }
+        .header h1 { color: #fff; font-size: 26px; margin: 0; }
+        .content { padding: 35px; }
+        p { color: #444; line-height: 1.7; font-size: 15px; margin-bottom: 15px; }
+        .thanks-box { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #38ef7d; padding: 25px; margin: 25px 0; border-radius: 0 8px 8px 0; }
+        .thanks-box h2 { color: #11998e; margin: 0 0 10px 0; font-size: 22px; }
+        .thanks-box p { color: #555; margin: 5px 0; }
+        .gift { text-align: center; font-size: 60px; margin: 25px 0; }
+        .button { display: inline-block; padding: 14px 35px; background: #38ef7d; color: #11998e; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 20px 0; }
+        .footer { background: #f8f9fa; padding: 20px; text-align: center; font-size: 12px; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🙏 Thank You!</h1>
+        </div>
+        <div class="content">
+            <p>Dear <strong>$name</strong>,</p>
+            
+            <p>We wanted to take a moment to express our sincere gratitude for your support.</p>
+            
+            <div class="gift">🎁</div>
+            
+            <div class="thanks-box">
+                <h2>As a Token of Appreciation</h2>
+                <p>Enjoy <strong>20% OFF</strong> your next purchase!</p>
+                <p style="margin-top:15px;">Use code: <strong style="color:#11998e;font-size:18px;">THANKS20</strong></p>
+            </div>
+            
+            <p>Your loyalty means the world to us. We're committed to continuing to provide you with the best experience possible.</p>
+            
+            <center><a href="$link" class="button">Redeem Your Gift</a></center>
+            
+            <p style="margin-top:25px;">With gratitude,<br>The $company Team</p>
+        </div>
+        <div class="footer">
+            <p>© $company | <a href="$unsubscribe_link" style="color:#888;">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+</html>

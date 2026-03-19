@@ -1,0 +1,47 @@
+name: Feature Request
+
+description: Suggest a new feature
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature!
+        
+  - type: input
+    id: summary
+    attributes:
+      label: Feature summary
+      description: Briefly describe your feature idea
+      placeholder: "Example: Add support for SendGrid API"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: Describe the problem you're trying to solve
+      placeholder: "I'm always frustrated when..."
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: How should the feature work?
+      placeholder: "I would like to see..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: Any alternative solutions you've thought about
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other information (mockups, examples, etc.)

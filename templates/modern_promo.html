@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; color: #1a1a2e; background: #f0f2f5; }
+        .email-wrapper { max-width: 650px; margin: 0 auto; background: #ffffff; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        .header::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); animation: pulse 4s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+        .header h1 { color: #ffffff; font-size: 32px; font-weight: 700; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.2); position: relative; z-index: 1; }
+        .header p { color: rgba(255,255,255,0.95); font-size: 16px; margin-top: 10px; position: relative; z-index: 1; }
+        .hero-image { width: 100%; height: 280px; object-fit: cover; display: block; }
+        .content { padding: 40px 35px; }
+        .greeting { font-size: 20px; color: #667eea; font-weight: 600; margin-bottom: 20px; }
+        .message { font-size: 16px; color: #4a4a5a; line-height: 1.8; margin-bottom: 25px; }
+        .highlight-box { background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%); border-left: 4px solid #667eea; padding: 25px; margin: 30px 0; border-radius: 0 12px 12px 0; }
+        .highlight-box h3 { color: #667eea; font-size: 18px; margin-bottom: 10px; }
+        .highlight-box p { color: #5a5a6a; font-size: 14px; }
+        .features-grid { display: table; width: 100%; margin: 35px 0; table-layout: fixed; }
+        .feature-cell { display: table-cell; width: 33.33%; text-align: center; padding: 20px 10px; vertical-align: top; }
+        .feature-icon { width: 60px; height: 60px; margin: 0 auto 12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; box-shadow: 0 4px 15px rgba(102,126,234,0.4); }
+        .feature-title { font-weight: 600; color: #1a1a2e; font-size: 14px; margin-bottom: 5px; }
+        .feature-desc { font-size: 12px; color: #6a6a7a; }
+        .cta-container { text-align: center; margin: 35px 0; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; padding: 18px 55px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 16px; box-shadow: 0 8px 25px rgba(102,126,234,0.4); transition: all 0.3s ease; }
+        .secondary-image { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin: 25px 0; }
+        .testimonial { background: #fafbfc; border-radius: 12px; padding: 25px; margin: 30px 0; text-align: center; }
+        .testimonial-text { font-style: italic; color: #4a4a5a; font-size: 15px; margin-bottom: 15px; }
+        .testimonial-author { font-weight: 600; color: #667eea; font-size: 14px; }
+        .urgency-banner { background: linear-gradient(90deg, #ff6b6b, #ee5a5a); color: white; padding: 15px 25px; text-align: center; font-weight: 600; border-radius: 8px; margin: 25px 0; }
+        .footer { background: #1a1a2e; color: #a0a0b0; padding: 35px 30px; text-align: center; font-size: 13px; }
+        .footer-logo { font-size: 24px; font-weight: 700; color: #ffffff; margin-bottom: 15px; }
+        .social-links { margin: 20px 0; }
+        .social-links a { display: inline-block; width: 40px; height: 40px; background: #2a2a3e; border-radius: 50%; margin: 0 8px; line-height: 40px; text-decoration: none; font-size: 18px; transition: background 0.3s; }
+        .social-links a:hover { background: #667eea; }
+        .footer-links { margin: 20px 0; }
+        .footer-links a { color: #a0a0b0; text-decoration: none; margin: 0 10px; font-size: 12px; }
+        .footer-links a:hover { color: #667eea; }
+        .unsubscribe { color: #6a6a7a; font-size: 11px; margin-top: 20px; }
+        @media only screen and (max-width: 600px) {
+            .header { padding: 35px 20px; }
+            .header h1 { font-size: 24px; }
+            .content { padding: 30px 20px; }
+            .feature-cell { display: block; width: 100%; margin-bottom: 20px; }
+            .cta-button { padding: 15px 40px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 Exclusive Offer Inside!</h1>
+            <p>Something amazing awaits you, $name</p>
+        </div>
+
+        <!-- Hero Image -->
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=650&h=280&fit=crop" alt="Special Offer" class="hero-image">
+
+        <!-- Main Content -->
+        <div class="content">
+            <p class="greeting">Hello $name,</p>
+            
+            <p class="message">
+                We're thrilled to bring you an <strong>exclusive opportunity</strong> from <strong>$company</strong>! 
+                This limited-time offer is designed just for our valued members like you.
+            </p>
+
+            <!-- Highlight Box -->
+            <div class="highlight-box">
+                <h3>🎁 Your Special Deal</h3>
+                <p>Use code <strong style="color: #667eea; font-size: 16px;">SAVE50</strong> at checkout for an incredible <strong>50% OFF</strong> your entire order!</p>
+            </div>
+
+            <!-- Urgency Banner -->
+            <div class="urgency-banner">
+                ⏰ Hurry! This offer expires in 48 hours
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-cell">
+                    <div class="feature-icon">⚡</div>
+                    <p class="feature-title">Lightning Fast</p>
+                    <p class="feature-desc">Same-day processing</p>
+                </div>
+                <div class="feature-cell">
+                    <div class="feature-icon">🛡️</div>
+                    <p class="feature-title">Secure</p>
+                    <p class="feature-desc">100% protected</p>
+                </div>
+                <div class="feature-cell">
+                    <div class="feature-icon">💎</div>
+                    <p class="feature-title">Premium</p>
+                    <p class="feature-desc">Top quality</p>
+                </div>
+            </div>
+
+            <!-- Secondary Image -->
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=650&h=200&fit=crop" alt="Premium Service" class="secondary-image">
+
+            <!-- CTA Button -->
+            <div class="cta-container">
+                <a href="$link" class="cta-button">Claim Your 50% Off →</a>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="testimonial">
+                <p class="testimonial-text">"This was the best decision I made! The service exceeded all my expectations."</p>
+                <p class="testimonial-author">— Sarah M., Verified Customer ⭐⭐⭐⭐⭐</p>
+            </div>
+
+            <p class="message">
+                Have questions? Our support team is here 24/7 to help you succeed.
+            </p>
+
+            <p style="margin-top: 25px;">
+                Best regards,<br>
+                <strong style="color: #667eea;">The $company Team</strong>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-logo">$company</p>
+            
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+                <a href="#">💼</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="$privacy_link">Privacy Policy</a>
+                <a href="$terms_link">Terms of Service</a>
+                <a href="$contact_link">Contact Us</a>
+            </div>
+
+            <p class="unsubscribe">
+                You received this email because you subscribed to our newsletter.<br>
+                <a href="$unsubscribe_link" style="color: #667eea;">Unsubscribe</a> anytime.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

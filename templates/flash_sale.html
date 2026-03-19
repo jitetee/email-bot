@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; background: #f4f4f4; }
+        .container { background: #ffffff; margin: 20px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 40px 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .content { padding: 40px 30px; }
+        .greeting { font-size: 18px; color: #f5576c; margin-bottom: 15px; }
+        .promo-image { width: 100%; max-width: 500px; height: auto; border-radius: 10px; margin: 25px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .offer-box { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 25px; border-radius: 10px; margin: 25px 0; text-align: center; }
+        .offer-text { font-size: 24px; font-weight: bold; color: #f5576c; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 18px 50px; text-decoration: none; border-radius: 30px; margin: 20px 0; font-weight: bold; font-size: 16px; box-shadow: 0 4px 15px rgba(245,87,108,0.4); transition: transform 0.3s; }
+        .features { display: table; width: 100%; margin: 25px 0; }
+        .feature-item { display: table-cell; width: 33%; text-align: center; padding: 15px; vertical-align: top; }
+        .feature-icon { font-size: 32px; margin-bottom: 10px; }
+        .footer { background: #2d3436; color: #b2bec3; padding: 25px 30px; text-align: center; font-size: 13px; }
+        .footer a { color: #f5576c; text-decoration: none; }
+        .social-links { margin: 15px 0; }
+        .social-links a { display: inline-block; margin: 0 10px; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Exclusive Flash Sale!</h1>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">Limited Time Offer - Don't Miss Out!</p>
+        </div>
+        
+        <div class="content">
+            <p class="greeting">Hi $name,</p>
+            
+            <p>We're excited to bring you an <strong>incredible deal</strong> from <strong>$company</strong>! For a limited time only, enjoy amazing discounts on our premium products.</p>
+            
+            <img src="https://via.placeholder.com/500x250/f5576c/ffffff?text=Flash+Sale+50%25+OFF" alt="Flash Sale" class="promo-image">
+            
+            <div class="offer-box">
+                <p style="margin: 0; color: #666;">Use Code:</p>
+                <p class="offer-text">FLASH50</p>
+                <p style="margin: 10px 0 0 0; color: #666;">For 50% OFF Your Order!</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <p><strong>Fast Shipping</strong><br>Free delivery on orders $50+</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💎</div>
+                    <p><strong>Premium Quality</strong><br>100% satisfaction guaranteed</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <p><strong>Easy Returns</strong><br>30-day return policy</p>
+                </div>
+            </div>
+            
+            <center>
+                <a href="$link" class="cta-button">Shop Now & Save 50%</a>
+            </center>
+            
+            <p style="margin-top: 30px; color: #666; font-size: 14px;">
+                ⏰ <strong>Hurry!</strong> This offer expires in 48 hours. Don't wait!
+            </p>
+            
+            <p style="margin-top: 25px;">
+                Best regards,<br>
+                <strong>The $company Team</strong>
+            </p>
+        </div>
+        
+        <div class="footer">
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+                <a href="#">📌</a>
+            </div>
+            <p>&copy; 2026 $company. All rights reserved.</p>
+            <p style="margin-top: 15px;">
+                You received this email because you subscribed to our newsletter.<br>
+                <a href="$unsubscribe_link">Unsubscribe</a> | <a href="$privacy_link">Privacy Policy</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 11px; color: #636e72;">
+                $company Address, City, Country
+            </p>
+        </div>
+    </div>
+</body>
+</html>

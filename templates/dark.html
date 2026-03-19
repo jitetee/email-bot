@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; max-width: 600px; margin: 0 auto; }
+        .container { background: #111; padding: 50px 40px; }
+        .glow { text-shadow: 0 0 20px rgba(0,255,136,0.5); }
+        h1 { color: #00ff88; font-size: 36px; margin: 0 0 10px 0; font-weight: 300; letter-spacing: 3px; }
+        .subtitle { color: #666; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; }
+        p { color: #888; line-height: 1.8; font-size: 15px; }
+        .box { border: 1px solid #333; padding: 25px; margin: 30px 0; text-align: center; background: #0a0a0a; }
+        .box h2 { color: #00ff88; font-size: 24px; margin: 0; }
+        .button { display: inline-block; padding: 16px 45px; background: transparent; color: #00ff88; border: 2px solid #00ff88; text-decoration: none; font-size: 14px; letter-spacing: 2px; margin: 25px 0; transition: all 0.3s; }
+        .footer { border-top: 1px solid #222; padding-top: 20px; margin-top: 40px; text-align: center; font-size: 11px; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">$company</h1>
+        <p class="subtitle">Exclusive Member Access</p>
+        <p>Hello $name,</p>
+        <p>You've been selected for exclusive access to our premium offerings.</p>
+        <div class="box">
+            <h2>50% OFF</h2>
+            <p style="color:#555;margin:10px 0;">Use code: <span style="color:#00ff88;">DARK50</span></p>
+        </div>
+        <center><a href="$link" class="button">ENTER</a></center>
+        <div class="footer">© $company | <a href="$unsubscribe_link" style="color:#444;">Unsubscribe</a></div>
+    </div>
+</body>
+</html>

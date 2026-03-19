@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; max-width: 650px; margin: 0 auto; background: #ecf0f1; }
+        .container { background: #ffffff; margin: 20px; border-radius: 8px; overflow: hidden; }
+        .header { background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 50px 40px; text-align: center; }
+        .header h1 { margin: 0; font-size: 32px; font-weight: normal; letter-spacing: 2px; }
+        .header p { margin: 15px 0 0 0; opacity: 0.9; font-style: italic; }
+        .content { padding: 40px; }
+        .intro { font-size: 18px; color: #3498db; margin-bottom: 25px; }
+        .product-showcase { display: table; width: 100%; margin: 30px 0; }
+        .product-item { display: table-cell; width: 50%; padding: 20px; vertical-align: top; }
+        .product-img { width: 100%; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .product-name { font-weight: bold; margin-top: 10px; color: #2c3e50; }
+        .product-price { color: #e74c3c; font-size: 18px; font-weight: bold; }
+        .old-price { text-decoration: line-through; color: #95a5a6; font-size: 14px; margin-right: 10px; }
+        .testimonial { background: #f8f9fa; padding: 25px; border-left: 4px solid #3498db; margin: 30px 0; font-style: italic; }
+        .testimonial-author { text-align: right; font-weight: bold; margin-top: 15px; font-style: normal; }
+        .cta-section { text-align: center; padding: 30px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); margin: 30px -40px; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px; letter-spacing: 1px; }
+        .footer { background: #2c3e50; color: #bdc3c7; padding: 30px 40px; text-align: center; font-size: 13px; }
+        .footer a { color: #3498db; text-decoration: none; }
+        .divider { height: 1px; background: #ecf0f1; margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>$company</h1>
+            <p>Premium Quality, Unbeatable Prices</p>
+        </div>
+        
+        <div class="content">
+            <p class="intro">Dear $name,</p>
+            
+            <p>We're thrilled to introduce you to our latest collection of premium products. At $company, we believe in delivering exceptional quality without compromising on value.</p>
+            
+            <div class="testimonial">
+                "I've been a customer for 3 years and the quality never disappoints. Highly recommended!"
+                <div class="testimonial-author">— Sarah M., Verified Buyer</div>
+            </div>
+            
+            <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">Featured Products</h3>
+            
+            <div class="product-showcase">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x200/3498db/ffffff?text=Product+1" alt="Product 1" class="product-img">
+                    <div class="product-name">Premium Package</div>
+                    <div class="product-price"><span class="old-price">$99.99</span>$49.99</div>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x200/2c3e50/ffffff?text=Product+2" alt="Product 2" class="product-img">
+                    <div class="product-name">Deluxe Edition</div>
+                    <div class="product-price"><span class="old-price">$149.99</span>$79.99</div>
+                </div>
+            </div>
+            
+            <div class="product-showcase">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x200/e74c3c/ffffff?text=Product+3" alt="Product 3" class="product-img">
+                    <div class="product-name">Ultimate Bundle</div>
+                    <div class="product-price"><span class="old-price">$199.99</span>$99.99</div>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x200/27ae60/ffffff?text=Product+4" alt="Product 4" class="product-img">
+                    <div class="product-name">Starter Kit</div>
+                    <div class="product-price"><span class="old-price">$59.99</span>$29.99</div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <p><strong>Why choose $company?</strong></p>
+            <ul style="color: #7f8c8d;">
+                <li>✓ Premium quality materials</li>
+                <li>✓ Fast and secure shipping</li>
+                <li>✓ 30-day money-back guarantee</li>
+                <li>✓ 24/7 customer support</li>
+            </ul>
+        </div>
+        
+        <div class="cta-section">
+            <p style="margin-bottom: 20px; color: #7f8c8d;">Ready to experience the difference?</p>
+            <a href="$link" class="cta-button">BROWSE COLLECTION</a>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2026 $company. All rights reserved.</p>
+            <p style="margin-top: 15px;">
+                Questions? Contact us at support@$company_domain<br>
+                <a href="$unsubscribe_link">Unsubscribe</a> | <a href="$privacy_link">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

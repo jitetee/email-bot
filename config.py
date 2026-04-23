@@ -39,14 +39,17 @@ DELAY_MAX = float(os.getenv("DELAY_MAX", "3.0"))  # Maximum random delay
 # Very Large (500+):     DELAY_MIN=5, DELAY_MAX=15, BATCH_SIZE=10
 
 # File Paths
+DATA_DIR = BASE_DIR / "data"
 EMAIL_LIST_FILE = BASE_DIR / "data" / "email_list.txt"
 TEMPLATES_DIR = BASE_DIR / "templates"
 LOGS_DIR = BASE_DIR / "logs"
 IMAGES_DIR = BASE_DIR / "data" / "images"
+ERROR_LOG_FILE = BASE_DIR / "logs" / "web_errors.log"
 
 # Ensure directories exist
 LOGS_DIR.mkdir(exist_ok=True)
 IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+DATA_DIR.mkdir(exist_ok=True)
 
 # Email Template Defaults
 DEFAULT_SUBJECT = "Special Offer Just for You!"

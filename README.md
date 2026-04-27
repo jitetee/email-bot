@@ -1,11 +1,12 @@
 ```
-  _  __         _       ____  _       _     _
- | |/ /__ _ ___| |__   / ___|(_) __ _| |__ | |_
- | ' // _` / __| '_ \  \___ \| |/ _` | '_ \| __|
- | . \ (_| \__ \ | | |  ___) | | (_| | | | | |_
- |_|\_\__,_|___/_| |_| |____/|_|\__, |_| |_|\__|
-                                |___/
-                     a Kash Sight project
+ ███████╗███╗   ███╗ █████╗ ██╗██╗     ██████╗  ██████╗ ████████╗
+ ██╔════╝████╗ ████║██╔══██╗██║██║     ██╔══██╗██╔═══██╗╚══██╔══╝
+ █████╗  ██╔████╔██║███████║██║██║     ██████╔╝██║   ██║   ██║
+ ██╔══╝  ██║╚██╔╝██║██╔══██║██║██║     ██╔══██╗██║   ██║   ██║
+ ███████╗██║ ╚═╝ ██║██║  ██║██║███████╗██████╔╝╚██████╔╝   ██║
+ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚═════╝  ╚═════╝    ╚═╝
+   Email Marketing Platform — SMTP Campaigns, Templates, Analytics
+                  a Kashsight project by @kashsight
 ```
 
 # 📧 Email Bot v3.0 - Professional Email Marketing Platform
@@ -15,7 +16,7 @@
 ![Email Bot Banner](https://img.shields.io/badge/Email_Bot-v3.0-blue?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/ezraogombo/email-bot?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/kashsight/email-bot?style=for-the-badge)
 
 **A powerful, compliant email marketing platform with AI-powered templates**
 
@@ -52,14 +53,14 @@
 ### One-Line Installation
 
 ```bash
-git clone https://github.com/ezraogombo/email-bot.git && cd email-bot && chmod +x install.sh && ./install.sh
+git clone https://github.com/kashsight/email-bot.git && cd email-bot && chmod +x install.sh && ./install.sh
 ```
 
 ### Step-by-Step Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/ezraogombo/email-bot.git
+git clone https://github.com/kashsight/email-bot.git
 cd email-bot
 
 # 2. Run the installation script
@@ -321,7 +322,7 @@ If you find this project helpful, consider supporting its development!
 
 ### [💖 Donate via PayPal](https://paypal.me/yourusername)
 
-### [🌟 Sponsor on GitHub](https://github.com/sponsors/ezraogombo)
+### [🌟 Sponsor on GitHub](https://github.com/sponsors/kashsight)
 
 ### [☕ Buy Me a Coffee](https://buymeacoffee.com/yourusername)
 
@@ -367,9 +368,9 @@ SOFTWARE.
 
 **Ezra Ogombo**
 
-[![GitHub](https://img.shields.io/badge/GitHub-ezraogombo-blue?style=for-the-badge&logo=github)](https://github.com/ezraogombo)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:ezraogombo@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ezraogombo)
+[![GitHub](https://img.shields.io/badge/GitHub-kashsight-blue?style=for-the-badge&logo=github)](https://github.com/kashsight)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:kashsight@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/kashsight)
 
 **Made with ❤️ by Ezra Ogombo**
 
@@ -381,8 +382,8 @@ SOFTWARE.
 
 ### ⭐ If you like this project, please give it a star!
 
-![Stars](https://img.shields.io/github/stars/ezraogombo/email-bot?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/ezraogombo/email-bot?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/ezraogombo/email-bot?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/kashsight/email-bot?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/kashsight/email-bot?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/kashsight/email-bot?style=for-the-badge)
 
 </div>
